@@ -3,7 +3,7 @@ import { StyleSheet, Dimensions,TouchableOpacity } from 'react-native'
 
 const card = (props) => {
     return (
-        <TouchableOpacity  key={props.key} style={{ ...styles.card, ...props.style }} onPress={props.onPress}>
+        <TouchableOpacity  style={{ ...styles.card, ...props.style }} onPress={props.onPress}>
             {props.children}
         </TouchableOpacity>          
     )

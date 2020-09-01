@@ -4,9 +4,9 @@ import * as React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import {Button} from 'native-base'
-import HomeScreen from '../screens/Home/homeScreen';
-import ItemsScreen from '../screens/Home/itemsScreen';
-import DetailsScreen from '../screens/Home/detailsScreen'
+import HomeScreen from '../screens/homeScreen';
+import ItemsScreen from '../screens/itemsScreen';
+import DetailsScreen from '../screens/detailsScreen'
 import {connect} from 'react-redux'
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();

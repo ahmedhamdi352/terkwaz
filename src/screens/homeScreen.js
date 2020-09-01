@@ -1,11 +1,11 @@
 import React,{useEffect} from 'react';
 import { StyleSheet, Text, View,FlatList } from 'react-native';
 import {connect} from 'react-redux';
-import * as CategoriesAction from '../../store/actions/Categories'
+import * as CategoriesAction from '../store/actions/Categories'
 import { useDispatch } from 'react-redux';
-import Lodding from '../../components/Layout/lodding'
+import Lodding from '../components/Layout/lodding'
 import {isEmpty} from 'lodash'
-import Card from '../../components/Layout/card'
+import Card from '../components/Layout/card'
 
 const CategoriesScreen = ({categories, navigation}) =>  {
   const dispatch = useDispatch();
@@ -49,7 +49,7 @@ const CategoriesScreen = ({categories, navigation}) =>  {
               showsVerticalScrollIndicator={false}
               keyExtractor={ (item, index) => index.toString() }
               renderItem={({item,index}) => (
-              <Card  key={index}  onPress={() => navigation.navigate('items',{
+              <Card  onPress={() => navigation.navigate('items',{
                 itemName: item,
               })}>
                   <Text style={styles.itemName}>{item}</Text>

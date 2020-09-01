@@ -1,12 +1,12 @@
 import { ActivityIndicator, Alert, FlatList, Text, StyleSheet, View, TextInput,Dimensions } from 'react-native';
 import React,{Component} from 'react'
-import {SERVER_URL} from '../../config/config'
+import {SERVER_URL} from '../config/config'
 import axios from 'axios'
-import Card from '../../components/Layout/card'
+import Card from '../components/Layout/card'
 import {Button} from 'native-base'
-import Lodding from '../../components/Layout/lodding'
+import Lodding from '../components/Layout/lodding'
 import {connect} from 'react-redux'
-import {SET_ACTIVE_ITEM} from '../../store/actions/Items'
+import {SET_ACTIVE_ITEM} from '../store/actions/Items'
 
 class ItemScreen extends Component {
 
@@ -112,7 +112,7 @@ class ItemScreen extends Component {
           keyExtractor={ (item, index) => index.toString() }
           showsVerticalScrollIndicator={false}
           renderItem={({item,index}) => (
-            <Card  key={index}  
+            <Card 
             style={styles.itemContent}
             >
               <View style={styles.cardContiner}>

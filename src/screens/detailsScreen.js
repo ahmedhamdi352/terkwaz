@@ -1,8 +1,8 @@
 import React,{useCallback} from 'react';
 import { StyleSheet, Text, View, Dimensions,Image,Linking,Alert } from 'react-native';
 import { useSelector } from 'react-redux';
-import  Card  from '../../components/Layout/card';
-import img from '../../assets/images/im.png';
+import  Card  from '../components/Layout/card';
+import img from '../assets/images/im.png';
 import { Button } from 'native-base';
 
 const CategoryMealScreen = props =>  {
