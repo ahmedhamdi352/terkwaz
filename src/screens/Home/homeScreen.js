@@ -47,6 +47,7 @@ const CategoriesScreen = ({categories, navigation}) =>  {
               numColumns={3}
               data={categories}
               showsVerticalScrollIndicator={false}
+              keyExtractor={ (item, index) => index.toString() }
               renderItem={({item,index}) => (
               <Card  key={index}  onPress={() => navigation.navigate('items',{
                 itemName: item,

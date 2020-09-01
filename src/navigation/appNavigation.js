@@ -3,7 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import * as React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-
+import {Button} from 'native-base'
 import HomeScreen from '../screens/Home/homeScreen';
 import ItemsScreen from '../screens/Home/itemsScreen';
 import DetailsScreen from '../screens/Home/detailsScreen'
@@ -40,6 +40,7 @@ const AppNavigator= ({activeProvider})=> {
           backgroundColor: 'black',
         },
         headerTintColor: '#fff',
+       
       
        }
        
@@ -47,7 +48,7 @@ const AppNavigator= ({activeProvider})=> {
     />
 
 <Stack.Screen name="Details" component={DetailsScreen}
-     options={({ route }) => (
+     options={
        { 
         headerTitleAlign:'center',
          title: 'Details',
@@ -58,7 +59,7 @@ const AppNavigator= ({activeProvider})=> {
       
        }
        
-       )}
+       }
     />
   </Stack.Navigator>
   );
