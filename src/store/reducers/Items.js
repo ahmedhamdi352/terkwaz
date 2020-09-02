@@ -1,7 +1,7 @@
 import {  SET_ACTIVE_ITEM, } from '../actions/Items';
 
 const initialState = {
-    entries:[],
+     activeItem :{}
    
 };
 
